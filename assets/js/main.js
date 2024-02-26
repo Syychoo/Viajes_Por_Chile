@@ -22,17 +22,18 @@ $(document).ready(function () {
         }
     });
 
-    submitButton.click(function () {
+
+    submitButton.click(function(){
 
 
-        if (nameInput.val().trim().length > 0 && topicInput.val().trim().length > 0 && messageInput.val().trim().length > 0) {
+        if(nameInput.val().trim().length > 0 && topicInput.val().trim().length > 0 && messageInput.val().trim().length > 0 ){
             nameInput.val("");
             topicInput.val("");
             messageInput.val("");
             submitButton.val("");
 
             alert('El mensaje a sido enviado.')
-        } else {
+        }else{
             alert('ERROR: Ingrese dato en todos los cuadros de texto!')
         }
     })
